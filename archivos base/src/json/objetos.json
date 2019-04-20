@@ -1,0 +1,538 @@
+{
+  "objetos": [
+    {
+      "name": "Sortija de doran",
+      "price": "400",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/1056.png?v=32"
+    },
+    {
+      "name": "Armadura de Warmog",
+      "price": "2850",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3083.png?v=32"
+    },
+    {
+      "name": "Bailarín espectral",
+      "price": "2600",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3046.png?v=32"
+    },
+    {
+      "name": "Danza de la muerte",
+      "price": "3500",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3812.png?v=32"
+    },
+    {
+      "name": "Botas del hechicero",
+      "price": "1100",
+      "type": "Botas",
+      "icon": "https://www.salsalol.com/images/items/3020.png?v=32"
+    },
+    {
+      "name": "Botas de mercurio",
+      "price": "1100",
+      "type": "Botas",
+      "icon": "https://www.salsalol.com/images/items/3111.png?v=32"
+    },
+    {
+      "name": "Botas de movilidad",
+      "price": "900",
+      "type": "Botas",
+      "icon": "https://www.salsalol.com/images/items/3117.png?v=32"
+    },
+    {
+      "name": "Botas de rapidez",
+      "price": "900",
+      "type": "Botas",
+      "icon": "https://www.salsalol.com/images/items/3009.png?v=32"
+    },
+    {
+      "name": "Botas de velocidad",
+      "price": "300",
+      "type": "Botas",
+      "icon": "https://www.salsalol.com/images/items/1001.png?v=32"
+    },
+    {
+      "name": "Botas jonias de lucidez",
+      "price": "900",
+      "type": "Botas",
+      "icon": "https://www.salsalol.com/images/items/3158.png?v=32"
+    },
+    {
+      "name": "Solari",
+      "price": "2200",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3383.png?v=32"
+    },
+    {
+      "name": "Báculo del vacío",
+      "price": "2650",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3135.png?v=32"
+    },
+    {
+      "name": "Bastón del arcangel",
+      "price": "3200",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3003.png?v=32"
+    },
+    {
+      "name": "Sterak",
+      "price": "3200",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3053.png?v=32"
+    },
+    {
+      "name": "Cañón de fuego rápido",
+      "price": "2600",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3094.png?v=32"
+    },
+    {
+      "name": "Capa de fuego solar",
+      "price": "2750",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3068.png?v=32"
+    },
+    {
+      "name": "Cetro de cristal de Rylai",
+      "price": "2600",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3116.png?v=32"
+    },
+    {
+      "name": "Placa del hombre muerto",
+      "price": "2900",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3742.png?v=32"
+    },
+    {
+      "name": "Corazón de hielo",
+      "price": "2700",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3110.png?v=32"
+    },
+    {
+      "name": "Sombrero mortífero de Rabadon",
+      "price": "3600",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3089.png?v=32"
+    },
+    {
+      "name": "Filo del robahechizos",
+      "price": "400",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/3303.png?v=32"
+    },
+    {
+      "name": "Diente de Nashor",
+      "price": "3000",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3115.png?v=32"
+    },
+    {
+      "name": "Eco de Luden",
+      "price": "3200",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3285.png?v=32"
+    },
+    {
+      "name": "Escudo reliquia",
+      "price": "400",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/3302.png?v=32"
+    },
+    {
+      "name": "Escudo de Doran",
+      "price": "450",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/1054.png?v=32"
+    },
+    {
+      "name": "Espada de Doran",
+      "price": "450",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/1055.png?v=32"
+    },
+    {
+      "name": "Espada larga",
+      "price": "350",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/1036.png?v=32"
+    },
+    {
+      "name": "Fauces de Malmortius",
+      "price": "3250",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3156.png?v=32"
+    },
+    {
+      "name": "Espada Fantasma de Youmuu",
+      "price": "2900",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3142.png?v=32"
+    },
+    {
+      "name": "Filo del infinito",
+      "price": "3400",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3031.png?v=32"
+    },
+    {
+      "name": "Hoja crepuscular de Draktharr",
+      "price": "2900",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3147.png?v=32"
+    },
+    {
+      "name": "Fuerza de la trinidad",
+      "price": "3733",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3078.png?v=32"
+    },
+    {
+      "name": "Grebas de berserker",
+      "price": "1100",
+      "type": "Botas",
+      "icon": "https://www.salsalol.com/images/items/3006.png?v=32"
+    },
+    {
+      "name": "Guantelete de hielo",
+      "price": "2700",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3025.png?v=32"
+    },
+    {
+      "name": "Hidra titánica",
+      "price": "3500",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3748.png?v=32"
+    },
+    {
+      "name": "Hidra voraz",
+      "price": "3500",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3074.png?v=32"
+    },
+    {
+      "name": "Espadafuria de Gunsoo",
+      "price": "3100",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3124.png?v=32"
+    },
+    {
+      "name": "Espada del rey arruinado",
+      "price": "3200",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3153.png?v=32"
+    },
+    {
+      "name": "Huracán de Runaan",
+      "price": "2600",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3085.png?v=32"
+    },
+    {
+      "name": "La Cuchilla Oscura",
+      "price": "3000",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3071.png?v=32"
+    },
+    {
+      "name": "La sanguinaria",
+      "price": "3500",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3072.png?v=32"
+    },
+    {
+      "name": "Lágrima de la diosa",
+      "price": "850",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3070.png?v=32"
+    },
+    {
+      "name": "Cota de espinas",
+      "price": "2900",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3075.png?v=32"
+    },
+    {
+      "name": "Manamune",
+      "price": "2400",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3004.png?v=32"
+    },
+    {
+      "name": "Máscara abisal",
+      "price": "3000",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3001.png?v=32"
+    },
+    {
+      "name": "Mazo de hielo",
+      "price": "3100",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3022.png?v=32"
+    },
+    {
+      "name": "Morellonomicón",
+      "price": "3000",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3165.png?v=32"
+    },
+    {
+      "name": "Filo de la tormenta",
+      "price": "3100",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3095.png?v=32"
+    },
+    {
+      "name": "Núcleo Hex mk-2",
+      "price": "2150",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3197.png?v=32"
+    },
+    {
+      "name": "Poción de vida",
+      "price": "50",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/2003.png?v=32"
+    },
+    {
+      "name": "Poción de corrupción",
+      "price": "500",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/2033.png?v=32"
+    },
+    {
+      "name": "Presagio de Randuin",
+      "price": "2900",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3143.png?v=32"
+    },
+    {
+      "name": "Armadura pétrea",
+      "price": "2500",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3193.png?v=32"
+    },
+    {
+      "name": "Daga de statikk",
+      "price": "2600",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3087.png?v=32"
+    },
+    {
+      "name": "Recordatorio mortal",
+      "price": "2800",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3033.png?v=32"
+    },
+    {
+      "name": "Redención",
+      "price": "2100",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3107.png?v=32"
+    },
+    {
+      "name": "Reloj de arena de Zhonya",
+      "price": "2900",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3157.png?v=32"
+    },
+    {
+      "name": "Apariencia espiritual",
+      "price": "2800",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3065.png?v=32"
+    },
+    {
+      "name": "Saqueador de esencia",
+      "price": "3200",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3508.png?v=32"
+    },
+    {
+      "name": "Tabi de ninja",
+      "price": "1100",
+      "type": "Botas",
+      "icon": "https://www.salsalol.com/images/items/3047.png?v=32"
+    },
+    {
+      "name": "Tormento de Liandry",
+      "price": "3100",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3151.png?v=32"
+    },
+    {
+      "name": "Vara de las edades",
+      "price": "2700",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3027.png?v=32"
+    },
+    {
+      "name": "Velo de la Banshee",
+      "price": "3000",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3102.png?v=32"
+    },
+    {
+      "name": "Restos de los vigilantes",
+      "price": "1800",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/3092.png?v=32"
+    },
+    {
+      "name": "Restos de los ascendidos",
+      "price": "1500",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/3069.png?v=32"
+    },
+    {
+      "name": "Restos del aspecto",
+      "price": "1800",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/3401.png?v=32"
+    },
+    {
+      "name": "Yelmo adaptable",
+      "price": "2800",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3194.png?v=32"
+    },
+    {
+      "name": "Moneda antigua",
+      "price": "400",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/3301.png?v=32"
+    },
+    {
+      "name": "Ángel guardián",
+      "price": "2800",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3026.png?v=32"
+    },
+    {
+      "name": "Cimitarra mercurial",
+      "price": "3400",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3139.png?v=32"
+    },
+    {
+      "name": "Crisol de Mikael",
+      "price": "2100",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3222.png?v=32"
+    },
+    {
+      "name": "Ensueño de Shurelya",
+      "price": "2250",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/2065.png?v=32"
+    },
+    {
+      "name": "Al filo de la cordura",
+      "price": "2900",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3091.png?v=32"
+    },
+    {
+      "name": "Grial impuro de Athenea",
+      "price": "2100",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3174.png?v=32"
+    },
+    {
+      "name": "GLP Hextech 800",
+      "price": "2800",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3030.png?v=32"
+    },
+    {
+      "name": "Pebetero ardiente",
+      "price": "2300",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3504.png?v=32"
+    },
+    {
+      "name": "Lanza de Shojin",
+      "price": "3400",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3161.png?v=32"
+    },
+    {
+      "name": "Portal Zz'Rot",
+      "price": "2700",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3512.png?v=32"
+    },
+    {
+      "name": "Promesa del caballero",
+      "price": "2200",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3109.png?v=32"
+    },
+    {
+      "name": "Protocinturón hextech",
+      "price": "2500",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3152.png?v=32"
+    },
+    {
+      "name": "Recuerdos de lord Dominik",
+      "price": "2800",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3036.png?v=32"
+    },
+    {
+      "name": "Sablepistola hextech",
+      "price": "3400",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3146.png?v=32"
+    },
+    {
+      "name": "Sombras gemelas",
+      "price": "2400",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3905.png?v=32"
+    },
+    {
+      "name": "Poción reutilizable",
+      "price": "150",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/2031.png?v=32"
+    },
+    {
+      "name": "Tótem guardián",
+      "price": "0",
+      "type": "Inicio",
+      "icon": "https://www.salsalol.com/images/items/3340.png?v=32"
+    },
+    {
+      "name": "Maldición de liche",
+      "price": "3200",
+      "type": "Magia",
+      "icon": "https://www.salsalol.com/images/items/3100.png?v=32"
+    },
+    {
+      "name": "Gloria justiciera",
+      "price": "2650",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3800.png?v=32"
+    },
+    {
+      "name": "Filo de la noche",
+      "price": "3000",
+      "type": "Daño",
+      "icon": "https://www.salsalol.com/images/items/3814.png?v=32"
+    },
+    {
+      "name": "Convergencia de Zeke",
+      "price": "2250",
+      "type": "Defensa",
+      "icon": "https://www.salsalol.com/images/items/3050.png?v=32"
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+{
+  "builds": [
+    {
+      "champ": "annie",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Eco de Luden",
+        "Botas del hechicero",
+        "Sombrero mortífero de Rabadon",
+        "Reloj de arena de Zhonya",
+        "Morellonomicón",
+        "Báculo del vacío"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Redención",
+        "Botas jonias de lucidez",
+        "Sombras gemelas",
+        "Ensueño de Shurelya",
+        "Cetro de cristal de Rylai"
+      ]
+    },
+    {
+      "champ": "lulu",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Eco de Luden",
+        "Cetro de cristal de Rylai",
+        "Botas jonias de lucidez",
+        "Morellonomicón",
+        "Reloj de arena de Zhonya",
+        "Pebetero ardiente"
+      ],
+      "buildSupport": [
+        "Botas jonias de lucidez",
+        "Restos de los vigilantes",
+        "Solari",
+        "Redención",
+        "Pebetero ardiente",
+        "Sombras gemelas"
+      ]
+    },
+    {
+      "champ": "aatrox",
+      "inicial": ["Escudo de Doran", "Poción de vida", "Poción reutilizable"],
+      "inicialSupport": ["Escudo reliquia", "Poción de vida", "Tótem guardián"],
+      "build": [
+        "Espada Fantasma de Youmuu",
+        "La Cuchilla Oscura",
+        "Botas de mercurio",
+        "Danza de la muerte",
+        "Ángel guardián",
+        "Sterak"
+      ],
+      "buildSupport": [
+        "Restos del aspecto",
+        "Botas de mercurio",
+        "Solari",
+        "Promesa del caballero",
+        "Sterak",
+        "Mazo de hielo"
+      ]
+    },
+    {
+      "champ": "ahri",
+      "inicial": ["Anillo de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Eco de Luden",
+        "Botas del hechicero",
+        "Reloj de arena de Zhonya",
+        "Sombras gemelas",
+        "Sombrero mortífero de Rabadon",
+        "Sombras gemelas"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Botas jonias de lucidez",
+        "Eco de Luden",
+        "Cetro de cristal de Rylai",
+        "Sombras gemelas",
+        "Ensueño de Shurelya"
+      ]
+    },
+    {
+      "champ": "missfortune",
+      "inicial": ["Espada de Doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Espada Fantasma de Youmuu",
+        "Hoja crepuscular de Draktharr",
+        "La Cuchilla Oscura",
+        "Grebas de berserker",
+        "Daga de statikk",
+        "Filo del infinito"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Espada Fantasma de Youmuu",
+        "Cetro de cristal de Rylai",
+        "Botas del hechicero",
+        "Sombras gemelas",
+        "Hoja crepuscular de Draktharr"
+      ]
+    },
+    {
+      "champ": "akali",
+      "inicial": ["Escudo de Doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Sablepistola hextech",
+        "Botas del hechicero",
+        "Reloj de arena de Zhonya",
+        "Velo de la Banshee",
+        "Eco de Luden",
+        "Morellonomicón"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Botas del hechicero",
+        "Sombras gemelas",
+        "Cetro de cristal de Rylai",
+        "Sablepistola hextech",
+        "Reloj de arena de Zhonya"
+      ]
+    },
+    {
+      "champ": "alistar",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": ["Escudo reliquia", "Poción de vida", "Tótem guardián"],
+      "build": [
+        "Vara de las edades",
+        "Capa de fuego solar",
+        "Placa del hombre muerto",
+        "Tabi de ninja",
+        "Apariencia espiritual",
+        "Gloria justiciera"
+      ],
+      "buildSupport": [
+        "Botas de movilidad",
+        "Solari",
+        "Redención",
+        "Crisol de Mikael",
+        "Promesa del caballero",
+        "Restos del aspecto"
+      ]
+    },
+    {
+      "champ": "amumu",
+      "inicial": ["Escudo de Doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Escudo reliquia",
+        "Poción reutilizable",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Vara de las edades",
+        "Cetro de cristal de Rylai",
+        "Tabi de ninja",
+        "Capa de fuego solar",
+        "Máscara abisal",
+        "Presagio de Randuin"
+      ],
+      "buildSupport": [
+        "Restos del aspecto",
+        "Tabi de ninja",
+        "Solari",
+        "Redención",
+        "Promesa del caballero",
+        "Gloria justiciera"
+      ]
+    },
+    {
+      "champ": "bard",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Eco de Luden",
+        "Maldición de liche",
+        "Botas de movilidad",
+        "Sombras gemelas",
+        "Protocinturón hextech",
+        "Cetro de cristal de Rylai"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Botas de movilidad",
+        "Ensueño de Shurelya",
+        "Sombras gemelas",
+        "Solari",
+        "Redención"
+      ]
+    },
+    {
+      "champ": "lux",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Eco de Luden",
+        "Reloj de arena de Zhonya",
+        "Botas del hechicero",
+        "Morellonomicón",
+        "Sombrero mortífero de Rabadon",
+        "Cetro de cristal de Rylai"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Botas del hechicero",
+        "Sombras gemelas",
+        "Eco de Luden",
+        "Redención",
+        "Cetro de cristal de Rylai"
+      ]
+    },
+    {
+      "champ": "blitzcrank",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Escudo reliquia",
+        "Poción reutilizable",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Vara de las edades",
+        "Botas de movilidad",
+        "Guantelete de hielo",
+        "Sombras gemelas",
+        "Capa de fuego solar",
+        "Apariencia espiritual"
+      ],
+      "buildSupport": [
+        "Restos del aspecto",
+        "Botas de movilidad",
+        "Solari",
+        "Redención",
+        "Guantelete de hielo",
+        "Promesa del caballero"
+      ]
+    },
+    {
+      "champ": "ashe",
+      "inicial": ["Espada de Doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Filo del infinito",
+        "Daga de statikk",
+        "Grebas de berserker",
+        "Huracán de Runaan",
+        "La sanguinaria",
+        "Cimitarra mercurial"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Botas jonias de lucidez",
+        "Sombras gemelas",
+        "Cetro de cristal de Rylai",
+        "Solari",
+        "Redención"
+      ]
+    },
+    {
+      "champ": "janna",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Vara de las edades",
+        "Eco de Luden",
+        "Cetro de cristal de Rylai",
+        "Botas jonias de lucidez",
+        "Pebetero ardiente",
+        "Sombras gemelas"
+      ],
+      "buildSupport": [
+        "Botas jonias de lucidez",
+        "Solari",
+        "Redención",
+        "Pebetero ardiente",
+        "Promesa del caballero",
+        "Sombras gemelas"
+      ]
+    },
+    {
+      "champ": "morgana",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Eco de Luden",
+        "Botas del hechicero",
+        "Reloj de arena de Zhonya",
+        "Vara de las edades",
+        "Sombras gemelas",
+        "Sombrero mortífero de Rabadon"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Botas jonias de lucidez",
+        "Sombras gemelas",
+        "Eco de Luden",
+        "Solari",
+        "Redención"
+      ]
+    },
+    {
+      "champ": "anivia",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Eco de Luden",
+        "Botas del hechicero",
+        "Reloj de arena de Zhonya",
+        "Bastón del arcangel",
+        "Vara de las edades",
+        "Cetro de cristal de Rylai"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Sombras gemelas",
+        "Eco de Luden",
+        "Bastón del arcangel",
+        "Cetro de cristal de Rylai",
+        "Botas jonias de lucidez"
+      ]
+    },
+    {
+      "champ": "brand",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Eco de Luden",
+        "Botas del hechicero",
+        "Reloj de arena de Zhonya",
+        "Cetro de cristal de Rylai",
+        "Tormento de Liandry",
+        "Sombrero mortífero de Rabadon"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Sombras gemelas",
+        "Eco de Luden",
+        "Botas jonias de lucidez",
+        "Ensueño de Shurelya",
+        "Cetro de cristal de Rylai"
+      ]
+    },
+    {
+      "champ": "caitlyn",
+      "inicial": ["Espada de Doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": ["Escudo reliquia", "Poción de vida", "Tótem guardián"],
+      "build": [
+        "Filo del infinito",
+        "Daga de statikk",
+        "Grebas de berserker",
+        "Cañón de fuego rápido",
+        "Filo de la tormenta",
+        "La sanguinaria"
+      ],
+      "buildSupport": [
+        "Restos del aspecto",
+        "Grebas de berserker",
+        "Mazo de hielo",
+        "Filo del infinito",
+        "Daga de statikk",
+        "Redención"
+      ]
+    },
+    {
+      "champ": "jinx",
+      "inicial": ["Espada de Doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": ["Escudo reliquia", "Poción de vida", "Tótem guardián"],
+      "build": [
+        "Filo del infinito",
+        "Daga de statikk",
+        "Grebas de berserker",
+        "Huracán de Runaan",
+        "Filo de la tormenta",
+        "La sanguinaria"
+      ],
+      "buildSupport": [
+        "Restos del aspecto",
+        "Grebas de berserker",
+        "Mazo de hielo",
+        "Bailarín espectral",
+        "Filo del infinito",
+        "Filo de la tormenta"
+      ]
+    },
+    {
+      "champ": "jhin",
+      "inicial": ["Espada de Doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": ["Escudo reliquia", "Poción de vida", "Tótem guardián"],
+      "build": [
+        "Filo del infinito",
+        "Daga de statikk",
+        "Grebas de berserker",
+        "Hoja crepuscular de Draktharr",
+        "Bailarín espectral",
+        "Danza de la muerte"
+      ],
+      "buildSupport": [
+        "Restos del aspecto",
+        "Grebas de berserker",
+        "Hoja crepuscular de Draktharr",
+        "Bailarín espectral",
+        "Mazo de hielo",
+        "Presagio de Randuin"
+      ]
+    },
+    {
+      "champ": "nami",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Pebetero ardiente",
+        "Botas jonias de lucidez",
+        "Cetro de cristal de Rylai",
+        "Eco de Luden",
+        "Cetro de cristal de Rylai",
+        "Reloj de arena de Zhonya"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Botas jonias de lucidez",
+        "Solari",
+        "Redención",
+        "Pebetero ardiente",
+        "Promesa del caballero"
+      ]
+    },
+    {
+      "champ": "orianna",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Eco de Luden",
+        "Botas del hechicero",
+        "Reloj de arena de Zhonya",
+        "Cetro de cristal de Rylai",
+        "Sombrero mortífero de Rabadon",
+        "Báculo del vacío"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Botas del hechicero",
+        "Eco de Luden",
+        "Cetro de cristal de Rylai",
+        "Sombras gemelas",
+        "Redención"
+      ]
+    },
+    {
+      "champ": "soraka",
+      "inicial": ["Sortija de doran", "Poción de vida", "Tótem guardián"],
+      "inicialSupport": [
+        "Filo del robahechizos",
+        "Poción de vida",
+        "Tótem guardián"
+      ],
+      "build": [
+        "Pebetero ardiente",
+        "Botas jonias de lucidez",
+        "Cetro de cristal de Rylai",
+        "Vara de las edades",
+        "Velo de la Banshee",
+        "Eco de Luden"
+      ],
+      "buildSupport": [
+        "Restos de los vigilantes",
+        "Botas jonias de lucidez",
+        "Redención",
+        "Solari",
+        "Redención",
+        "Pebetero ardiente"
+      ]
+    }
+  ]
+}

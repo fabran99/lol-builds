@@ -1,0 +1,881 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#203f3d), to(#161b30));
+  background: linear-gradient(to bottom, #203f3d 0%, #161b30 100%);
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.menuContainer {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.menu {
+  background: #18191b;
+  padding: 0.35em 0.8em;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+.menu .overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.822);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.menu .goTop {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  color: white;
+  background: #102040;
+  padding: 0.2em 0.6em;
+  font-size: 1.8em;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: -2;
+}
+
+.menu .goTop:hover {
+  background: #152a55;
+}
+
+.menu .toggle {
+  color: #b39660;
+  font-size: 1.7em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu .toggle:hover {
+  color: #c3ad83;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.menu .menu-container {
+  font-size: 1.3em;
+  position: absolute;
+  background: #18191b;
+  left: 0;
+  padding: 0.8em;
+  border-top: 2px solid #575757;
+  top: calc(100% + 1px);
+  width: 320px;
+  height: 100vh;
+  opacity: 0.8;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.menu .menu-container.visible {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.menu .menu-container .menuLink {
+  color: #b39660;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.9em;
+  cursor: pointer;
+}
+
+.menu .menu-container .menuLink:hover {
+  color: #c3ad83;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.menu .menu-container select,
+.menu .menu-container input {
+  display: block;
+  margin: 0.9em 0;
+  margin-top: -0.1em;
+  font-family: "Poppins";
+  background: black;
+  border: 1px solid #b39660;
+  color: white;
+  padding: 0.5em 0.5em;
+  font-size: 0.7em;
+  cursor: pointer;
+  outline: none;
+  max-width: 90%;
+}
+
+.menu .menu-container select option,
+.menu .menu-container input option {
+  border: none;
+  outline: none;
+}
+
+.menu .menu-container input {
+  cursor: auto;
+}
+
+.menu .menu-container .enviar {
+  margin-top: 0.7em;
+  background: black;
+  padding: 0.5em 0.8em;
+  color: white;
+  border: 2px solid #b39660;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.75em;
+  text-decoration: none;
+}
+
+.menu .menu-container .enviar:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background: #0d0d0d;
+}
+
+.listado {
+  padding: 5em 0;
+}
+
+.listado .itemListado {
+  width: 100%;
+  color: white;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(#162928), to(#0f111a));
+  background: linear-gradient(to bottom, #162928 0%, #0f111a 100%);
+  margin-bottom: 1.5em;
+}
+
+.listado .itemListado .championName {
+  background: #0b162c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b162c), to(#081020));
+  background: linear-gradient(to bottom, #0b162c 0%, #081020 100%);
+  padding: 0.5em 1em;
+  border-bottom: 2px solid black;
+}
+
+.listado .itemListado .championName a {
+  text-decoration: none;
+  color: white;
+}
+
+.listado .itemListado .championName a h3 {
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+@media (max-width: 420px) {
+  .listado .itemListado .championName a h3 {
+    font-size: 1.2em;
+  }
+}
+
+.listado .itemListado .championName a h3:hover {
+  opacity: 0.8;
+}
+
+.listado .itemListado .champion-data {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "imagen clase boton";
+  grid-gap: 10px;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  padding-left: 5px;
+  padding-top: 5px;
+  border: 2px solid #060c18;
+  border-top: none;
+}
+
+.listado .itemListado .champion-data a {
+  color: white;
+  text-decoration: none;
+}
+
+.listado .itemListado .champion-data li {
+  color: white;
+  cursor: pointer;
+}
+
+.listado .itemListado .champion-data li:hover {
+  color: #c3ad83;
+}
+
+.listado .itemListado .champion-data .image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imagen;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.listado .itemListado .champion-data .image img {
+  opacity: 0.82;
+}
+
+@media (max-width: 420px) {
+  .listado .itemListado .champion-data .image img {
+    width: 60px;
+  }
+}
+
+.listado .itemListado .champion-data .image img:hover {
+  opacity: 1;
+}
+
+.listado .itemListado .champion-data .tags {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: clase;
+  padding-top: 0.3em;
+}
+
+@media (max-width: 420px) {
+  .listado .itemListado .champion-data .tags {
+    font-size: 0.8em;
+    padding-top: 0em;
+    padding-bottom: 0.7em;
+  }
+}
+
+.listado .itemListado .champion-data .tags h5 {
+  font-weight: lighter;
+  font-size: 1.4em;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  margin-bottom: 0.3em;
+}
+
+@media (max-width: 420px) {
+  .listado .itemListado .champion-data .tags h5 {
+    font-size: 1.3em;
+  }
+}
+
+.listado .itemListado .champion-data .tags ul {
+  display: block;
+  padding-left: 1.1em;
+}
+
+.listado .itemListado .champion-data .boton {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: boton;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.listado .itemListado .champion-data .boton a {
+  border: 1px solid #b39660;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  background: #0b0b0b;
+}
+
+@media (max-width: 420px) {
+  .listado .itemListado .champion-data .boton a {
+    font-size: 0.8em;
+  }
+}
+
+.listado .itemListado .champion-data .boton a:hover {
+  color: white;
+  background: black;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: 1px solid white;
+}
+
+.cabeceraListado .header {
+  color: white;
+  background: #051d2c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#051d2c), to(#020e15));
+  background: linear-gradient(to bottom, #051d2c 0%, #020e15 100%);
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 2px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 420px) {
+  .cabeceraListado .header {
+    font-size: 0.8em;
+  }
+}
+
+.cabeceraListado .header h2,
+.cabeceraListado .header h3 {
+  font-weight: lighter;
+}
+
+.cabeceraListado .header h2 small,
+.cabeceraListado .header h3 small {
+  color: grey;
+}
+
+.cabeceraListado .header .clear {
+  display: inline-block;
+  margin-top: 0.8em;
+  padding: 0.7em 1em;
+  background: #18191b;
+  border: 1px solid #866e40;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.cabeceraListado .header .clear:hover {
+  background: #0c0d0e;
+}
+
+.champContainer {
+  padding: 5em 0;
+}
+
+.champContainer .popUp {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.877);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding-top: 100px;
+  text-align: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.champContainer .popUp .popData {
+  background: black;
+  color: white;
+  padding: 2em;
+  margin: 1em;
+  position: relative;
+  border: 2px solid #0b1a25;
+  -webkit-animation: popUp 0.2s ease;
+          animation: popUp 0.2s ease;
+}
+
+@-webkit-keyframes popUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes popUp {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.champContainer .popUp .popData p {
+  margin-top: 0.2em;
+}
+
+.champContainer .popUp .popData i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  margin: 0.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.champContainer .popUp .popData i:hover {
+  opacity: 1;
+}
+
+.champContainer .champ {
+  color: white;
+  background: #0b162c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b162c), to(#060c18));
+  background: linear-gradient(to bottom, #0b162c 0%, #060c18);
+}
+
+.champContainer .champ .buildsContainer h2 {
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 1em;
+}
+
+.champContainer .champ .buildsContainer .build {
+  margin-top: 1em;
+  border-bottom: 1px solid black;
+  padding-bottom: 1.2em;
+}
+
+@media (max-width: 420px) {
+  .champContainer .champ .buildsContainer .cuadrosBuild .cuadroBuild {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.champContainer .champ .add {
+  text-align: center;
+  background: #0f2d55;
+  border: 1px solid #0a1d3a;
+}
+
+.champContainer .champ .add:hover {
+  background: #1a3569;
+}
+
+.champContainer .champ .add a {
+  color: white;
+  display: block;
+  padding: 0.5em 0;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+@media (max-width: 420px) {
+  .champContainer .champ .add a {
+    font-size: 1em;
+  }
+}
+
+.champContainer .champ .header {
+  padding: 0.5em;
+  padding-bottom: 0;
+  border-bottom: 1px solid black;
+  background: rgba(70, 88, 122, 0.13);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "imagen name";
+}
+
+@media (max-width: 420px) {
+  .champContainer .champ .header {
+    font-size: 0.8em;
+    padding-bottom: 0.5em;
+  }
+}
+
+.champContainer .champ .header .name {
+  display: inline-block;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+}
+
+.champContainer .champ .header .name h1,
+.champContainer .champ .header .name h4 {
+  font-weight: lighter;
+  margin-bottom: -0.1em;
+}
+
+.champContainer .champ .header .name .tags {
+  margin-top: 1em;
+  border-bottom: 1px solid rgba(188, 205, 209, 0.089);
+  padding-bottom: 0.4em;
+  margin-right: 0.6em;
+}
+
+.champContainer .champ .header .name .tags a {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 1em;
+  color: white;
+}
+
+.champContainer .champ .header .name .tags a:hover {
+  color: #c3ad83;
+}
+
+.champContainer .champ .header .imagen {
+  display: inline-block;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imagen;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+@media (max-width: 420px) {
+  .champContainer .champ .header .imagen img {
+    width: 80px;
+  }
+}
+
+.creador {
+  padding: 5em 0;
+  color: white;
+}
+
+.creador .container-creador {
+  background: #0b162c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b162c), to(#060c18));
+  background: linear-gradient(to bottom, #0b162c 0%, #060c18);
+  padding-bottom: 0.5em;
+}
+
+.creador .container-creador .header {
+  padding: 0.5em;
+  border-bottom: 1px solid grey;
+  background: rgba(56, 73, 88, 0.24);
+  padding-left: 0.9em;
+}
+
+.creador .container-creador .header h2 {
+  font-weight: lighter;
+}
+
+.creador .container-creador .resultado {
+  color: black;
+  background: #eeeeee;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  font-size: 0.8em;
+  overflow-x: auto;
+}
+
+.creador .container-creador .campos {
+  padding: 1em;
+}
+
+.creador .container-creador .campos label,
+.creador .container-creador .campos input {
+  display: block;
+}
+
+.creador .container-creador .campos input,
+.creador .container-creador .campos select {
+  margin: 0.5em 0;
+  background: black;
+  color: white;
+  outline: none;
+  border: 1px solid #b39660;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5em 0.9em;
+  font-size: 0.9em;
+}
+
+.creador .container-creador .campos .add {
+  margin: 0.9em;
+  margin-bottom: 0.2em;
+  padding: 0.5em 1em;
+  background: #0c0d0e;
+  border: 1px solid #b39660;
+  cursor: pointer;
+}
+
+.creador .container-creador .campos .add:hover {
+  background: black;
+}
+
+.objetos {
+  padding: 1em;
+}
+
+.objetos h3 {
+  font-weight: lighter;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+  padding-bottom: 0.3em;
+  margin-left: 0.4em;
+}
+
+.objetos .seccion {
+  margin: 0.4em;
+  border: 2px solid #060f1d;
+  background: #061222;
+}
+
+.objetos .seccion h2 {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 0.5em 0.8em;
+  font-weight: lighter;
+  background: rgba(35, 43, 53, 0.397);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b162c), to(#091326));
+  background: linear-gradient(to bottom, #0b162c 0%, #091326 100%);
+  cursor: pointer;
+  position: relative;
+  border-bottom: 2px solid #050a18;
+}
+
+.item {
+  padding: 0.4em;
+  border-radius: 3px;
+  border: 1px solid black;
+  background: rgba(10, 13, 20, 0.534);
+  margin-bottom: 1em;
+  position: relative;
+  overflow: hidden;
+  margin: 0.5em 0;
+}
+
+.item .visible {
+  cursor: pointer;
+}
+
+.item .visible:hover ~ .data {
+  display: block;
+}
+
+.item .visible .imagen {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+}
+
+.item .visible .imagen img {
+  border: 2px solid rgba(12, 104, 190, 0.692);
+  border-radius: 3px;
+}
+
+.item .visible .name {
+  text-align: center;
+  height: 4.2em;
+}
+
+.item .data {
+  position: absolute;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.87);
+  padding: 0.2em;
+  text-align: center;
+  top: 0;
+  left: 0;
+  display: none;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.item .data:hover {
+  display: block;
+}
+
+.item .data p {
+  margin-bottom: 0.4em;
+}
+
+.item .data p:nth-child(1) {
+  color: #0077ff;
+}
+
+.item .data p:nth-child(2) {
+  color: white;
+}
+
+.item .data p:nth-child(3) {
+  color: #ffc400;
+}
+
+.champData {
+  margin: 0.9em;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "imagen datos";
+  border-bottom: 1px solid black;
+  padding-bottom: 0.4em;
+}
+
+.champData .image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imagen;
+}
+
+@media (max-width: 420px) {
+  .champData .image img {
+    width: 75px;
+  }
+}
+
+@media (max-width: 420px) {
+  .champData .datos {
+    font-size: 0.9em;
+  }
+}
+
+.champData .datos a {
+  color: white;
+  text-decoration: none;
+}
+
+.champData .datos a h2 {
+  font-weight: lighter;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: datos;
+  font-size: 1.6em;
+}
+
+.champData .datos .tags {
+  margin-top: 1em;
+  border-bottom: 1px solid rgba(188, 205, 209, 0.089);
+  padding-bottom: 0.4em;
+  margin-right: 0.6em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.champData .datos .tags a {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 1em;
+  color: white;
+}
+
+.champData .datos .tags a:hover {
+  color: #c3ad83;
+}
+
+.build .select {
+  margin: 1em 0.9em;
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
+.build .select p {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.build .select select {
+  background: black;
+  color: white;
+  outline: none;
+  border: 1px solid #b39660;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5em 0.9em;
+  font-size: 0.9em;
+}
+
+.build h4 {
+  font-weight: lighter;
+  margin-bottom: 0.5em;
+  margin-left: 0.9em;
+}
+
+.build .cuadrosBuild {
+  margin: 0 0.9em;
+  margin-bottom: 0.4em;
+  background: #0d1a2b;
+  padding: 0.2em 0.5em;
+  padding-top: 0.5em;
+  border: 2px solid #010203;
+}
+
+.build .cuadrosBuild .cuadroBuild {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  background: #181c1f;
+  border: 2px solid black;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.build .cuadrosBuild .cuadroBuild:hover {
+  background: #0f1113;
+}
+
+.build .cuadrosBuild .cuadroBuild:not(:first-child) {
+  margin-left: 5px;
+}
+
+@media (max-width: 420px) {
+  .build .cuadrosBuild .cuadroBuild {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.build .cuadrosBuild .cuadroBuild img {
+  width: 100%;
+  height: 100%;
+}
+
+.build button {
+  display: inline-block;
+  margin: 1em;
+  outline: none;
+  background: #18191b;
+  padding: 0.4em 0.7em;
+  border: 1px solid #b39660;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.build button:hover {
+  background: #0e0f10;
+}
+
+.girando {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: 100000;
+  -webkit-animation: girando 1s linear alternate infinite;
+          animation: girando 1s linear alternate infinite;
+}
+
+@-webkit-keyframes girando {
+  from {
+    left: -10vw;
+  }
+  to {
+    left: 100vw;
+  }
+}
+
+@keyframes girando {
+  from {
+    left: -10vw;
+  }
+  to {
+    left: 100vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */

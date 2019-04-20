@@ -1,0 +1,809 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin phone {
+  @media (max-width: 420px) {
+    @content;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+$negro: rgb(24, 25, 27);
+$dorado: #b39660;
+$gris: rgb(87, 87, 87);
+$azul: rgb(11, 22, 44);
+
+html {
+  height: 100vh;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgb(32, 63, 61) 0%,
+    rgb(22, 27, 48) 100%
+  );
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.menuContainer {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.menu {
+  background: $negro;
+  padding: 0.35em 0.8em;
+  border-bottom: 2px solid darken($negro, 10%);
+  position: relative;
+
+  .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.822);
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .goTop {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    background: lighten($azul, 5%);
+    padding: 0.2em 0.6em;
+    font-size: 1.8em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: -2;
+
+    &:hover {
+      background: lighten($azul, 10%);
+    }
+  }
+
+  .toggle {
+    color: $dorado;
+    font-size: 1.7em;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+      color: lighten($dorado, 10%);
+      transition: all 0.2s ease;
+    }
+  }
+
+  .menu-container {
+    font-size: 1.3em;
+    position: absolute;
+    background: $negro;
+    left: 0;
+    padding: 0.8em;
+    border-top: 2px solid $gris;
+    top: calc(100% + 1px);
+    width: 320px;
+    height: 100vh;
+    opacity: 0.8;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+
+    &.visible {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .menuLink {
+      color: $dorado;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.9em;
+      cursor: pointer;
+
+      &:hover {
+        color: lighten($dorado, 10%);
+        transition: all 0.2s ease;
+      }
+    }
+
+    select,
+    input {
+      display: block;
+      margin: 0.9em 0;
+      margin-top: -0.1em;
+      font-family: "Poppins";
+      background: darken($negro, 10%);
+      border: 1px solid $dorado;
+      color: white;
+      padding: 0.5em 0.5em;
+      font-size: 0.7em;
+      cursor: pointer;
+      outline: none;
+      max-width: 90%;
+
+      option {
+        border: none;
+        outline: none;
+      }
+    }
+
+    input {
+      cursor: auto;
+    }
+
+    .enviar {
+      margin-top: 0.7em;
+      background: black;
+      padding: 0.5em 0.8em;
+      color: white;
+      border: 2px solid $dorado;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 0.75em;
+      text-decoration: none;
+
+      &:hover {
+        transition: all 0.2s ease;
+        background: lighten(black, 5%);
+      }
+    }
+  }
+}
+
+.listado {
+  padding: 5em 0;
+
+  .itemListado {
+    width: 100%;
+    color: white;
+    background: black;
+    background: linear-gradient(
+      to bottom,
+      rgb(22, 41, 40) 0%,
+      rgb(15, 17, 26) 100%
+    );
+    margin-bottom: 1.5em;
+
+    .championName {
+      background: $azul;
+      background: linear-gradient(to bottom, $azul 0%, darken($azul, 3%) 100%);
+      padding: 0.5em 1em;
+      border-bottom: 2px solid darken($azul, 20%);
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        h3 {
+          font-weight: lighter;
+          font-size: 1.5em;
+
+          @include phone {
+            font-size: 1.2em;
+          }
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .champion-data {
+      display: grid;
+      grid-template-areas: "imagen clase boton";
+      grid-gap: 10px;
+      align-items: top;
+      padding-left: 5px;
+      padding-top: 5px;
+      border: 2px solid darken($azul, 5%);
+      border-top: none;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      li {
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: lighten($dorado, 10%);
+        }
+      }
+      .image {
+        grid-area: imagen;
+        align-self: center;
+
+        img {
+          opacity: 0.82;
+
+          @include phone {
+            width: 60px;
+          }
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .tags {
+        grid-area: clase;
+        padding-top: 0.3em;
+
+        @include phone {
+          font-size: 0.8em;
+          padding-top: 0em;
+          padding-bottom: 0.7em;
+        }
+
+        h5 {
+          font-weight: lighter;
+          font-size: 1.4em;
+          border-bottom: 1px solid white;
+          display: inline-block;
+          margin-bottom: 0.3em;
+          @include phone {
+            font-size: 1.3em;
+          }
+        }
+
+        ul {
+          display: block;
+          padding-left: 1.1em;
+        }
+      }
+
+      .boton {
+        grid-area: boton;
+        align-self: center;
+        text-align: center;
+
+        a {
+          border: 1px solid $dorado;
+          padding: 0.5em 1em;
+          font-size: 0.9em;
+          background: darken($gris, 30%);
+          @include phone {
+            font-size: 0.8em;
+          }
+
+          &:hover {
+            color: white;
+            background: black;
+            transition: all 0.5s ease;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+}
+
+// cabecera listado
+.cabeceraListado {
+  .header {
+    color: white;
+    background: rgb(5, 29, 44);
+    background: linear-gradient(
+      to bottom,
+      rgb(5, 29, 44) 0%,
+      darken(rgb(5, 29, 44), 5%) 100%
+    );
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+    @include phone {
+      font-size: 0.8em;
+    }
+
+    h2,
+    h3 {
+      font-weight: lighter;
+
+      small {
+        color: grey;
+      }
+    }
+
+    .clear {
+      display: inline-block;
+      margin-top: 0.8em;
+      padding: 0.7em 1em;
+      background: $negro;
+      border: 1px solid darken($dorado, 15%);
+      cursor: pointer;
+      transition: all 0.4s ease;
+
+      &:hover {
+        background: darken($negro, 5%);
+      }
+    }
+  }
+}
+
+// Champ
+
+.champContainer {
+  padding: 5em 0;
+
+  .popUp {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.877);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    padding-top: 100px;
+    text-align: center;
+    transform-origin: center;
+
+    .popData {
+      background: black;
+      color: white;
+      padding: 2em;
+      margin: 1em;
+      position: relative;
+      border: 2px solid rgb(11, 26, 37);
+      animation: popUp 0.2s ease;
+
+      @keyframes popUp {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      p {
+        margin-top: 0.2em;
+      }
+
+      i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        margin: 0.5em;
+        font-size: 1.5em;
+        cursor: pointer;
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .champ {
+    color: white;
+    background: $azul;
+    background: linear-gradient(to bottom, $azul 0%, darken($azul, 5%));
+
+    .buildsContainer {
+      h2 {
+        font-weight: lighter;
+        text-align: center;
+        font-size: 1.4em;
+        padding: 1em;
+      }
+      .build {
+        margin-top: 1em;
+        border-bottom: 1px solid black;
+        padding-bottom: 1.2em;
+      }
+      .cuadrosBuild {
+        .cuadroBuild {
+          @include phone {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+
+    .add {
+      text-align: center;
+      background: rgb(15, 45, 85);
+      border: 1px solid rgb(10, 29, 58);
+
+      &:hover {
+        background: lighten($azul, 15%);
+      }
+      a {
+        color: white;
+        display: block;
+        padding: 0.5em 0;
+        text-decoration: none;
+        font-size: 1.3em;
+
+        @include phone {
+          font-size: 1em;
+        }
+      }
+    }
+
+    .header {
+      padding: 0.5em;
+      padding-bottom: 0;
+      border-bottom: 1px solid black;
+      background: rgba(70, 88, 122, 0.13);
+      display: grid;
+      grid-template-areas: "imagen name";
+
+      @include phone {
+        font-size: 0.8em;
+        padding-bottom: 0.5em;
+      }
+
+      .name {
+        display: inline-block;
+        grid-area: name;
+        h1,
+        h4 {
+          font-weight: lighter;
+          margin-bottom: -0.1em;
+        }
+        .tags {
+          margin-top: 1em;
+          border-bottom: 1px solid rgba(188, 205, 209, 0.089);
+          padding-bottom: 0.4em;
+          margin-right: 0.6em;
+          a {
+            display: inline-block;
+            text-decoration: none;
+            margin-right: 1em;
+            color: white;
+
+            &:hover {
+              color: lighten($dorado, 10%);
+            }
+          }
+        }
+      }
+
+      .imagen {
+        display: inline-block;
+        grid-area: imagen;
+        align-self: center;
+        img {
+          @include phone {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// creador de objetos
+
+.creador {
+  padding: 5em 0;
+  color: white;
+
+  .container-creador {
+    background: $azul;
+    background: linear-gradient(to bottom, $azul 0%, darken($azul, 5%));
+    padding-bottom: 0.5em;
+
+    .header {
+      padding: 0.5em;
+      border-bottom: 1px solid grey;
+      background: rgba(56, 73, 88, 0.24);
+      padding-left: 0.9em;
+      h2 {
+        font-weight: lighter;
+      }
+    }
+    .resultado {
+      color: black;
+      background: rgb(238, 238, 238);
+      margin: 1em;
+      padding: 1em;
+      border-radius: 5px;
+      font-size: 0.8em;
+      overflow-x: auto;
+    }
+
+    .campos {
+      padding: 1em;
+
+      label,
+      input {
+        display: block;
+      }
+
+      input,
+      select {
+        margin: 0.5em 0;
+        background: black;
+        color: white;
+        outline: none;
+        border: 1px solid $dorado;
+        font-family: "Poppins", sans-serif;
+        padding: 0.5em 0.9em;
+        font-size: 0.9em;
+      }
+
+      .add {
+        margin: 0.9em;
+        margin-bottom: 0.2em;
+        padding: 0.5em 1em;
+        background: darken($negro, 5%);
+        border: 1px solid $dorado;
+        cursor: pointer;
+
+        &:hover {
+          background: darken($negro, 10%);
+        }
+      }
+    }
+  }
+}
+
+// items
+.objetos {
+  padding: 1em;
+
+  h3 {
+    font-weight: lighter;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+    padding-bottom: 0.3em;
+    margin-left: 0.4em;
+  }
+
+  .seccion {
+    margin: 0.4em;
+    border: 2px solid rgb(6, 15, 29);
+    background: rgb(6, 18, 34);
+
+    h2 {
+      width: 100%;
+      font-size: 1.2em;
+      padding: 0.5em 0.8em;
+      font-weight: lighter;
+      background: rgba(35, 43, 53, 0.397);
+      background: linear-gradient(
+        to bottom,
+        $azul 0%,
+        darken($azul, 1.5%) 100%
+      );
+      cursor: pointer;
+      position: relative;
+      border-bottom: 2px solid rgb(5, 10, 24);
+    }
+  }
+}
+
+.item {
+  padding: 0.4em;
+  border-radius: 3px;
+  border: 1px solid black;
+  background: rgba(10, 13, 20, 0.534);
+  margin-bottom: 1em;
+  position: relative;
+  overflow: hidden;
+  margin: 0.5em 0;
+
+  .visible {
+    cursor: pointer;
+
+    &:hover ~ .data {
+      display: block;
+    }
+    .imagen {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+      img {
+        border: 2px solid rgba(12, 104, 190, 0.692);
+        border-radius: 3px;
+      }
+    }
+    .name {
+      text-align: center;
+      height: 4.2em;
+    }
+  }
+  .data {
+    position: absolute;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.87);
+    padding: 0.2em;
+    text-align: center;
+    top: 0;
+    left: 0;
+    display: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      display: block;
+    }
+
+    p {
+      margin-bottom: 0.4em;
+      &:nth-child(1) {
+        color: rgb(0, 119, 255);
+      }
+      &:nth-child(2) {
+        color: rgb(255, 255, 255);
+      }
+      &:nth-child(3) {
+        color: rgb(255, 196, 0);
+      }
+    }
+  }
+}
+
+.champData {
+  margin: 0.9em;
+  display: grid;
+  grid-template-areas: "imagen datos";
+  border-bottom: 1px solid black;
+  padding-bottom: 0.4em;
+
+  .image {
+    grid-area: imagen;
+    img {
+      @include phone {
+        width: 75px;
+      }
+    }
+  }
+
+  .datos {
+    @include phone {
+      font-size: 0.9em;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+
+      h2 {
+        font-weight: lighter;
+        grid-area: datos;
+        font-size: 1.6em;
+      }
+    }
+
+    .tags {
+      margin-top: 1em;
+      border-bottom: 1px solid rgba(188, 205, 209, 0.089);
+      padding-bottom: 0.4em;
+      margin-right: 0.6em;
+      align-self: center;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 1em;
+        color: white;
+
+        &:hover {
+          color: lighten($dorado, 10%);
+        }
+      }
+    }
+  }
+}
+
+.build {
+  .select {
+    margin: 1em 0.9em;
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+
+    p {
+      display: inline-block;
+      margin-right: 1em;
+    }
+
+    select {
+      background: black;
+      color: white;
+      outline: none;
+      border: 1px solid $dorado;
+      font-family: "Poppins", sans-serif;
+      padding: 0.5em 0.9em;
+      font-size: 0.9em;
+    }
+  }
+
+  h4 {
+    font-weight: lighter;
+    margin-bottom: 0.5em;
+    margin-left: 0.9em;
+  }
+
+  .cuadrosBuild {
+    margin: 0 0.9em;
+    margin-bottom: 0.4em;
+    background: rgb(13, 26, 43);
+    padding: 0.2em 0.5em;
+    padding-top: 0.5em;
+    border: 2px solid darken($azul, 10%);
+
+    .cuadroBuild {
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+      background: rgb(24, 28, 31);
+      border: 2px solid black;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover {
+        background: rgb(15, 17, 19);
+      }
+
+      &:not(:first-child) {
+        margin-left: 5px;
+      }
+
+      @include phone {
+        width: 32px;
+        height: 32px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  button {
+    display: inline-block;
+    margin: 1em;
+    outline: none;
+    background: $negro;
+    padding: 0.4em 0.7em;
+    border: 1px solid $dorado;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($negro, 4%);
+    }
+  }
+}
+
+// jesus girando
+
+.girando {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: 100000;
+  animation: girando 1s linear alternate infinite;
+
+  @keyframes girando {
+    from {
+      left: -10vw;
+    }
+    to {
+      left: 100vw;
+    }
+  }
+}
