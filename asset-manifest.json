@@ -1,13 +1,13 @@
 {
   "main.css": "/lol-builds/static/css/main.bbcf7906.chunk.css",
-  "main.js": "/lol-builds/static/js/main.1a023a71.chunk.js",
-  "main.js.map": "/lol-builds/static/js/main.1a023a71.chunk.js.map",
+  "main.js": "/lol-builds/static/js/main.42ec59a3.chunk.js",
+  "main.js.map": "/lol-builds/static/js/main.42ec59a3.chunk.js.map",
   "runtime~main.js": "/lol-builds/static/js/runtime~main.84e1de9c.js",
   "runtime~main.js.map": "/lol-builds/static/js/runtime~main.84e1de9c.js.map",
-  "static/js/2.6ca38512.chunk.js": "/lol-builds/static/js/2.6ca38512.chunk.js",
-  "static/js/2.6ca38512.chunk.js.map": "/lol-builds/static/js/2.6ca38512.chunk.js.map",
+  "static/js/2.aec8b61b.chunk.js": "/lol-builds/static/js/2.aec8b61b.chunk.js",
+  "static/js/2.aec8b61b.chunk.js.map": "/lol-builds/static/js/2.aec8b61b.chunk.js.map",
   "index.html": "/lol-builds/index.html",
-  "precache-manifest.839634e4d757c75175e37a6af94e9e3c.js": "/lol-builds/precache-manifest.839634e4d757c75175e37a6af94e9e3c.js",
+  "precache-manifest.d6ddef956e5226c80138c04186774d5c.js": "/lol-builds/precache-manifest.d6ddef956e5226c80138c04186774d5c.js",
   "service-worker.js": "/lol-builds/service-worker.js",
   "static/css/main.bbcf7906.chunk.css.map": "/lol-builds/static/css/main.bbcf7906.chunk.css.map",
   "static/media/jesusGirando.gif": "/lol-builds/static/media/jesusGirando.fa3b3379.gif"
