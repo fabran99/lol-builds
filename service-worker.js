@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/lol-builds/precache-manifest.223a1b13007af841275ba358b42fb12c.js"
+  "/lol-builds/precache-manifest.082e7c8f89be504febd444cefe89fbe5.js"
 );
 
 workbox.clientsClaim();
